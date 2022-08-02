@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&family=Roboto:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f5f5f5;
+    --prime: #358EF1;
+    --text: #3a3c4c;
+    --border: #3a3c4c;
+    --main: #181a22;
+    --theme-bg: #292D3E;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #0001;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0003;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0005;
+}
+
+
+body {
+    margin: 0;
+    padding: 60px 0 0;
+    height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+}
+
+h1::before {
+    content: '';
+    background: #358ef1;
+    margin-right: 0.75rem;
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    top: -3px;
+    box-shadow: 3px 3px #358ef163, 6px 6px #358ef142;
+}
+
+
+#site-header{
+    padding: 0.75rem 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#app{
+    min-height: calc(100vh - 90px);
+}
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    color: #0000;
+    transition: color 0.3s ease-in;
+    cursor: pointer;
+}
+.card:hover {
+    color: #838383;
+}
+
+
+footer {
+    background: #0001;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ccc;
+    width: 100%;
+    font-size: 0.75rem;
+}
+footer a {
+    color: #333;
+    transition: .2s ease;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
